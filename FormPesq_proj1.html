@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" href="projpesq.css">
+  <title>Formulário FreeCodeCamp</title>
+  </head>
+  <body>
+    <h1 id="title">Formulário FreeCodeCamp</h1>
+    <p id="description"><strong>Agradecemos por nos ajudar a melhorar nosso atendimento</strong></p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Nome: <input id="name" name="name" type="text"  placeholder="Ex. Maria de Oliveira" required></label>
+      <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Ex. nome@serv.com" required></label>
+      <label for="number-label" id="number-label">Idade: <br><input id="number" name="number" type="number" min="15" max="120" placeholder="Ex. 20"></label>
+    </fieldset>
+    <fieldset>  
+      <label>O que você achou de nosso atendimento?
+        <select id="dropdown">
+          <option value="""">Selecione</option>
+          <option value="1">Ruim</option>
+          <option value="2">Regular</option>
+          <option value="3">Ótimo</option>
+        </select>
+      </label>
+      <label><legend>Você nos recomendaria a um amigo ou familiar?</legend></label>
+        <label><input type="radio" name="recomendar" class="inline" value="sim" checked>Sim </label>
+        <label><input type="radio" name="recomendar" class="inline" value="não">Não </label>
+      <label>Qual ou quais atendimentos devemos melhorar? </label>
+       
+         <label><input type="checkbox" value="telefone">Atendimento via telefone </label>
+        <label><input type="checkbox" value="whatsapp">Atendimento via WhatsApp </label>
+        <label><input type="checkbox" value="presencial">Atendimento presencial </label>
+        <input type="checkbox" value="email">Atendimento via email
+     </label>
+    </fieldset>
+    <fieldset>  
+      <label>Comente sobre suas sugestões:
+        <textarea rows="3" cols="55" placeholder="Sua opnião é importante"></textarea>
+      </label>
+      <button id="submit" type="submit" value="Submit">Enviar</button>
+    </fieldset>
+    </form>
+  </body>
+</html>
