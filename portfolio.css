@@ -1,0 +1,230 @@
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(white, purple 30%, black 80%);
+  margin-top: 30vw;
+}
+nav {
+  background-color: rgb(255, 255, 255);
+  font-family: tahoma;
+  font-weight: 800;
+  width: 100vw;
+  height: 12vw;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+#navbar {
+	position: fixed;
+	min-width: 300px;
+  top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 60px;
+	border-bottom: solid;
+	border-color: rgb(220, 184, 184);
+  z-index: 0;
+	}
+
+  nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  z-index: -1;
+  }
+
+  nav > ul > li {
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+  
+}
+
+nav > ul > li:hover {
+  background-color: rgb(220, 184, 184);
+  color: white;
+  cursor: pointer;
+  font-size: 150%;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#welcome-section {
+  box-sizing: inherit;
+  position: absolut;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height:70vh;
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+  font-family: Trebuchet MS;
+  text-shadow:
+      1px 1px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+#about {
+  position: absolut;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: Trebuchet MS;
+  border-radius: 10px;
+}
+
+p {
+  text-indent: 20px;
+  padding-left: 10px;
+  padding-right: 3px;
+}
+
+.ola {
+  text-indent: 40px;
+  padding-top: 10px;
+}
+
+.projects-grid {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: Trebuchet MS;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projects-title {
+position: relative;
+margin-top: 200px;
+color: white;
+text-align: center;
+font-size: 35px;
+text-decoration: underline;
+z-index: -4;
+}
+
+#page {
+  width: 250px;
+  height: 300px;
+  margin-top: 20px;
+  display: block;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: solid rgb(220, 184, 184);
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 5px;
+  background-color: rgb(220, 184, 184);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.project-image > a:visited {
+  color: black;
+}
+.project-image > a:hover {
+  font-style: italic;
+  font-size: 16px;  
+}
+
+.fundo {
+ background: linear-gradient( black, purple, white);
+  width: 100vw;
+  height: 60vh; 
+  display: flex;
+  position: absolute;
+  left: 0;
+  margin-top: 0px;
+	}
+ 
+ .contato {
+  color: white;
+  display: flex;
+  position: absolute;
+  left: 30px;
+  bottom: 150px;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  text-decoration: underline;
+ }
+
+#profile-link {
+  color: white;
+  font-size: 18px;
+  font-family: Trebuchet MS;
+  list-style-type: none;
+  }
+
+.lista {
+  position: absolute;
+  bottom: 35px;
+  left: 60px;
+  line-height: 200%;
+  }
+.img {
+  width: 45px;
+  position: relative;
+  bottom: -15px;
+  margin-right: 8px;
+  margin-left: -8px;
+  }
+
+.img2 {
+  width: 30px;
+  position: relative;
+  bottom: -5px;
+  margin-right: 15px;
+}
+
+
+@media (max-width:660px) {
+  #about {
+  position: absolut;
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: Trebuchet MS;
+  border-radius: 10px;
+}
+}
